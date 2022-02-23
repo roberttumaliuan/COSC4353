@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Completion | Fuel Quote</title>
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/5/quartz/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">FuelQuote</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarColor02"
+          aria-controls="navbarColor02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="/login.html"
+                >Home
+                <span class="visually-hidden">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/profile.html">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/fuelquote.html">Request</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/fuelquotehistory.html">History</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <h6 class="loginT">Login</h6>
+            <button class="form-control me-sm-2" id="btn">
+              <a href="/login.html"><i class="fa fa-user"></i></a>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="card border-success" style="max-width: 50rem">
+        <div class="card-header" style="text-align: center">
+          STEP II: Profile Details
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Please enter your request detail</h4>
+          <form action="">
+            <fieldset>
+              <!-- 50 char -->
+              <div class="form-group">
+                <label for="exampleInputEmail1" class="form-label mt-4"
+                  >Gallons</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+
+              <!-- 100 char -->
+              <div class="form-group">
+                <label for="exampleInputEmail1" class="form-label mt-4"
+                  >Delivery Address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="LA 34 Sema No 14"
+                  disabled=""
+                />
+              </div>
+
+              <!-- 100 char -->
+              <div class="form-group">
+                <label for="exampleInputEmail1" class="form-label mt-4"
+                  >Suggested Price</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="$ 100"
+                  disabled=""
+                />
+              </div>
+
+              <!-- 100 char -->
+              <div class="form-group">
+                <label for="exampleInputEmail1" class="form-label mt-4"
+                  >Total Amount Due</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  disabled=""
+                  placeholder="$ 2,540"
+                />
+              </div>
+            </fieldset>
+            <br />
+            <button type="reset" class="btn btn-secondary">Reset</button>
+            <button type="submit" class="btn btn-success">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+      <div class="container text-center">
+        <small>2022 &copy; All rights reserved by the developer.</small>
+      </div>
+    </footer>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
